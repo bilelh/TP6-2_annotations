@@ -5,9 +5,9 @@ import fr.pizzeria.utils.ToString;
 public class Pizza {
 	
 	public int id ;
-	@ToString
+	@ToString (uppercase = true)
 	public String code ;
-	@ToString
+	@ToString (uppercase = false)
 	public String libelle ;
 	public double prix ;
 	public static int id_pizza = 0 ;

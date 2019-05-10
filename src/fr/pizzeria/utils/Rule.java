@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 
 @Retention(RUNTIME)
 @Target(FIELD)
-public @interface ToString {
+public @interface Rule {
 	
-	boolean uppercase () default false ;
+	public int min() default 0;
 
 }

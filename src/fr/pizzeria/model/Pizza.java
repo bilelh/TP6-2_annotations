@@ -1,9 +1,13 @@
 package fr.pizzeria.model;
 
+import fr.pizzeria.utils.ToString;
+
 public class Pizza {
 	
 	public int id ;
+	@ToString
 	public String code ;
+	@ToString
 	public String libelle ;
 	public double prix ;
 	public static int id_pizza = 0 ;

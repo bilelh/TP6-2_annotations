@@ -1,5 +1,6 @@
 package fr.pizzeria.model;
 
+import fr.pizzeria.utils.Rule;
 import fr.pizzeria.utils.ToString;
 
 public class Pizza {
@@ -9,6 +10,7 @@ public class Pizza {
 	public String code ;
 	@ToString (uppercase = false)
 	public String libelle ;
+	@Rule(min=0) 
 	public double prix ;
 	public static int id_pizza = 0 ;
 		// AJOUT DE L'ATTRIBUT DE TYPE CategoriePizza
@@ -35,10 +37,10 @@ public class Pizza {
 		this.cat = cat ;
 	}
 	
-	public String toString (CategoriePizza cat) {
+	//public String toString () {
 		
-		return cat.getCat() ;
-	}
+		
+	//}
 	
 
 }
